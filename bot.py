@@ -40,14 +40,17 @@ def test():
     print("2. To decompose a program into several small subroutines.")
     print("3. To determine the execution time of a program.")
     print("4. To interrupt the execution of a program.")
-    print('Completed, have a nice day!')
+    # print('Completed, have a nice day!')
 
     answer = int(input())
 
     while answer != 2:
-        print("Please, try again")
+        if answer not in (1, 2, 3, 4):
+            print("UNAVAILABLE OPTION: enter a number from 1 to 4")
+        else:
+            print("Please, try again")
         answer = int(input())
-    print("Completed, have a nice day!")
+    # print("Completed, have a nice day!")
 
 
 def end():
